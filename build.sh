@@ -17,7 +17,7 @@ then
 fi
 
 PACKAGE=`go list`
-
+PACKAGE=${PACKAGE##*\-}
 echo "Build package: $PACKAGE"
 
 output="\"main\": {"

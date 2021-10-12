@@ -1,4 +1,4 @@
-module siridb
+module github.com/thingsdb/module-go-siridb
 
 go 1.16
 
