@@ -69,7 +69,7 @@ Syntax: `insert(data)`
 
 #### Arguments
 
-- `data`: Thing with data points to insert.
+- `data`: Thing with series and data points to insert.
 
 #### Example:
 
