@@ -36,7 +36,7 @@ for i in ${!arr[@]}; do
         fn="$fn.bin"
     fi
 
-    GOOS="${osarch[0]}" GOARCH="${osarch[1]}" go build -o "${OUT}$fn"
+    CGO_ENABLED=0 GOOS="${osarch[0]}" GOARCH="${osarch[1]}" go build -o "${OUT}$fn"
     output="$output\n    \"${arr[i]}\": \"${OUT}$fn\""
 done
 
